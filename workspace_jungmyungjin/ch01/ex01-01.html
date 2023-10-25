@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript">
+      console.log("Hello Javascript - 1");
+      /* HTML을 다 읽어오지 않은 상태에서 DOM 객체를 불러오면 에러가 난다. */
+      // var btn = document.querySelector("button");
+      // btn.addEventListener("click", (event) => {
+      //   console.log("버튼 클릭", event.clientX, event.clientY);
+      // });
+
+      /* window.onload는 웹 페이지의 모든 리소스가 완전히 로드 되었을 때 실행되는 이벤트 핸들러이다. */
+      window.onload = function () {
+        console.log("Hello Javascript - 5");
+        var btn = document.querySelector("button");
+        btn.addEventListener("click", (event) => {
+          console.log("버튼 클릭", event.clientX, event.clientY);
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <h1>
+      Hello JavaScript - 3
+      <script src="./ex01-01.js"></script>
+    </h1>
+    <button>클릭</button>
+  </body>
+  <script type="text/javascript">
+    console.log("Hello Javascript - 4");
+    // var btn = document.querySelector("button");
+    // btn.addEventListener("click", (event) => {
+    //   console.log("버튼 클릭", event.clientX, event.clientY);
+    // });
+  </script>
+</html>
